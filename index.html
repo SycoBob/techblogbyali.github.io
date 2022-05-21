@@ -39,11 +39,13 @@ p {
   padding: 1em 2em;
   border: 1px solid #666;
   margin: 0.5em 0;
+  transition: 0.2s;
 }
 
 .btn:hover {
-  background: #eaeaea;
-  color: #333;
+  background: #2196f3;
+  color: #255784;
+box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
 }
 
 /* Header Showcase */
@@ -106,6 +108,9 @@ p {
 .card-content {
   padding: 1.5em;
 }
+#section-b a {
+   text-decoration: none;
+} 
 
 /* Section C */
 
@@ -130,7 +135,7 @@ p {
 
 #main-footer {
   padding: 2em;
-  background: rgb(231, 70, 70);
+  background: rgb(0, 0, 0);
   color: #fff;
   text-align: center;
 }
@@ -149,7 +154,7 @@ p {
   }
 
   #section-a .content-text {
-    columns: 2;
+    
     column-gap: 2em;
   }
 
@@ -178,11 +183,12 @@ p {
 }
 
 </style>
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 <!-- Header Showcase -->
 <header id="showcase" class="grid">
   <div class="bg-image"></div>
   <div class="content-wrap">
-    <h1>Welcome to Tech blog By Ali</h1>
+    <h1>Welcome To Tech Blog By Ali</h1>
     <p>I am a student entailed on a journey to help me learn and provide information to everyone.</p>
     <p> Updates on every wednesday</p>
     <a href="#section-b" class="btn">Lastest News</a>
@@ -194,10 +200,11 @@ p {
   <!-- Section A -->
   <section id="section-a" class="grid">
     <div class="content-wrap">
-      <h2 class="content-title">W</h2>
+      <h2 class="content-title"> The Lastest News </h2>
       <div class="content-text">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint eligendi possimus? Unde officiis magnam laborum ipsa distinctio odio, vero dolores dicta aliquam aperiam repellendus. Perferendis officiis deserunt velit voluptas nobis sequi
-          animi totam, accusantium, ex eius quia, natus quo?</p>
+        <h3><a href="https://www.offerzen.com/blog/azure-developer-salary-south-africa">Azure Developer Salary Trends in South Africa</a></h3>
+        <p>29.6% of South African developers list Microsoft Azure as their primary cloud platform, putting it in second place after AWS. Here,
+           we’ll look at average Microsoft Azure developer salaries at the junior, mid and senior levels.</p>
       </div>
     </div>
   </section>
@@ -206,31 +213,35 @@ p {
   <section id="section-b" class="grid">
     <ul>
       <li>
-        <div class="card">
-          <img src="https://static.pexels.com/photos/574077/pexels-photo-574077.jpeg" alt="">
+        <a href="https://devsnest.in/"> <div class="card">
+          <img src="https://avatars.githubusercontent.com/u/87668117?s=200&v=4" alt="">
           <div class="card-content">
-            <h3 class="card-title">Web Development</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
+            <h3 class="card-title">Devnest</h3>
+            <p>Devnest is an indain based company that is providing a 7 month full stack course for free,
+              if you not intersted in the course you can go to their new solve page and solves some problems and learn from them</p>
           </div>
-        </div>
+        </div></a>
       </li>
       <li>
-        <div class="card">
-          <img src="https://static.pexels.com/photos/261628/pexels-photo-261628.jpeg" alt="">
+        <a href="https://www.alxafrica.com/"> <div class="card">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAgVBMVEUbIibv7+8AAADh4eLb3NwAAATy8vL39/f5+fnQ0NH19fUXHyMADBMAAAycnp8SGh8KFRqoqqu/wMGAg4S0tbYABQ6Rk5TFxsYeJSkzODttcHFXWlzn5+eXmZoFEhiMjo9qbW48QENFSkwtMzZ3entNUVNESEu3uLnV1daEhohfYmQrwsdTAAADEUlEQVR4nO3Y63KiMABAYYhCNKgg3tpqsa3ay77/A24QAsGCnf7YMbjnm+lMsdrJmSAkeB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+I1Fy6xH8W9HU+7rnxFg8zsOduPUw/plEnFKpwsHdForj5yj0faswar4huvxEz4hzn12YPU7sN8TNw/4Rw3NgXbh6GS2sEzZ5DZf9Pn8vC6cv0rcSk1c/lP1OvCicPkl9UCXmgb7f78RmYRFYJRaBvUmM4mSSJbG+lEwKWf5qo3DyNPL9OtEE9iMxEd52sd4f31ZiPSus81WMXRifTOA5sQ7Uh7Ps1gXXxeK4UVIq/bOb79SZHATexRyunq3EoxWoxonbt8VgO5TVaM0v4fBboSesxNAOnLodqMddDbbWVthIrKhx4HjgsmXUHYVtic4HBm3T0ln4PdH5UzTeytbArsLLROcDq4R8sHqT9HOhTlTWuzbC8cDkxcyI2s0XX2nd2FmYvdpTuHD9Xh+kZlkyF6ssE4fhtbtFLntrXHhHe8cTJ2YuynVXnOzCq4U6sHlrcTwxejcnaVZ+nbJycd1RmJ3Cy3un24lJ2RN+BOUrUXbtLG0J1IlrhxOTY1GoZtWzCDEIOwvtwFD1ItHMoZqvzEti1zmHiRWo0r21DH92NjHejsocM8T41Pk9jN7rxYHaCGEnrl3dPUVRea7JYzmJYtN9LZ18yDow8urEcHBw9r4vPk3QVsRRlIi5iWjdPZWJqljJmMRw8BDfuKNbtjcXDLk8eYenz+pEbN89LfO/S7NUE1+j8988dwO9yNzy9UDlSNYb4a7dk06UabUWzROdnkFtsv/d3kLvJlNrsa0THQ/UYxyr3xR6Yr2yryrB4uB4oL6cDlqeYVzbWzQ/7/gzqFzsDdtO1M7CHoqCecujqHsq1F+mt1TJMKfkwA8L5fNSVR71u9CLxcNxuRmP09kfkY4Lab4Yn5qjzerHf+K4KFkFQkwnsTcVhen59eYRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA7ttfZSMn3zBBthcAAAAASUVORK5CYII=" alt="">
           <div class="card-content">
-            <h3 class="card-title">Mobile Applications</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
+            <h3 class="card-title">ALX Africa</h3>
+            <p>ALX Africa is also a great rsourse to go ahead and learn full stack development but not only that theres a Virtual Assistant programme,
+              Financial Analyst programme and a Young Entrepreneurs Programme</p>
           </div>
-        </div>
+        </div></a>
       </li>
       <li>
-        <div class="card">
-          <img src="https://static.pexels.com/photos/265087/pexels-photo-265087.jpeg" alt="">
+        <a href="https://www.meetup.com/Hack-The-Box-Meetup-South-Africa/events/285859099/"> <div class="card">
+          <img src="https://www.meetup.com/_next/image/?url=https%3A%2F%2Fsecure-content.meetupstatic.com%2Fimages%2Fclassic-events%2F502698148%2F676x380.webp&w=1920&q=75" alt="">
           <div class="card-content">
-            <h3 class="card-title">Tech Marketing</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p>
+            <h3 class="card-title">Hack The Box Meetup: South Africa</h3>
+            <p>"It's been over a year since we learned binary exploitation. Get ready to shake off the rust and learn some ROP! In this Meetup,
+               we will bypass NX and ASLR to solve some active pwn challenges 💥" even though this might not be beginner friendly they do encourge beginners,
+               beacuse we all do have to start somewhere</p>
           </div>
-        </div>
+        </div></a>
       </li>
     </ul>
   </section>
@@ -238,27 +249,31 @@ p {
   <!-- Section C -->
   <section id="section-c" class="grid">
     <div class="content-wrap">
-      <h2 class="content-title">We handle all of your digital needs</h2>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime nam rerum vel earum error fugiat cupiditate, dolore eius! Minus, explicabo.</p>
+      <h2 class="content-title">well this is just the beginging</h2>
+      <p>If you have any queries or ideas on how i could improve please contact me @ any of the socails below</p>
     </div>
   </section>
 
   <!-- Section D -->
   <section id="section-d" class="grid">
     <div class="box">
-      <h2 class="content-title">Contact Us</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, suscipit. Rerum ducimus a quod, ut et voluptas obcaecati unde fuga.</p>
-      <p>contact@acmewebsolutions.test</p>
+      <h2 class="content-title">Connect with me</h2>
+      <h3><a href="https://wa.me/+27810495640">Whatsapp</a></h3>
+      <h3><a href="https://github.com/SycoBob">Github</a></h3>
+      
+      
     </div>
     <div class="box">
-      <h2 class="content-title">About Our Company</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum porro deserunt, deleniti, quae facere repudiandae, officiis est exercitationem nobis iusto doloremque! Soluta excepturi in aut suscipit amet temporibus quo?</p>
+      <h2 class="content-title">About me</h2>
+      <p>I am Ali omar Muhammad,a second year Software Development student @ ctu training solutions.
+        Right now this isnt really a profile page but its a learn curb for me to better my skills in web dev.
+      </p>
     </div>
   </section>
 </main>
 
 <!-- Footer -->
 <footer id="main-footer" class="grid">
-  <div>Acme Web Solutions</div>
-  <div>Project By <a href="http://traversymedia.com" target="_blank">Traversy Media</a></div>
+  <div></div>
+  <div>Project By <a href="https://youtu.be/xvFZjo5PgG0" target="_blank">Ali Omar Muhammad</a></div>
 </footer>
